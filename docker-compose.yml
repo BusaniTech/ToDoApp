@@ -1,7 +1,7 @@
 services:
   app:
     image: node:14.15.0-alpine
-    command: sh -c "yarn install && yarn run dev"
+    command: bat -c "yarn install && yarn run dev"
     ports:
       - 3001:3000
     working_dir: /app
